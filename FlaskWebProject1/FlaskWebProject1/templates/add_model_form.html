@@ -1,0 +1,55 @@
+﻿{% block content %}
+<form action="" method="post" name="add">
+    {{form.hidden_tag()}}
+    <div class="form-group {% if form.name.errors %} has-error {% endif %}">
+        {{ form.name.label(class="col-sm-4") }}
+        {{ form.name(placeholder="", class="form-control") }}
+        {{ form.name.errors[0] }}
+    </div>
+    <div class="form-group {% if form.OS_Id.errors %} has-error {% endif %}">
+        {{ form.OS_Id.label(class="col-sm-4") }}
+        {{ form.OS_Id(placeholder="", class="form-control") }}
+        {{ form.OS_Id.errors[0] }}
+    </div>
+    <div class="form-group {% if form.company_Id.errors %} has-error {% endif %}">
+        {{ form.company_Id.label(class="col-sm-4") }}
+        {{ form.company_Id(placeholder="", class="form-control") }}
+        {{ form.company_Id.errors[0] }}
+    </div>
+    <div class="form-group {% if form.USBConnector_Id.errors %} has-error {% endif %}">
+        {{ form.USBConnector_Id.label(class="col-sm-4") }}
+        {{ form.USBConnector_Id(placeholder="", class="form-control") }}
+        {{ form.USBConnector_Id.errors[0] }}
+    </div>
+    <div class="form-group {% if form.processor_Id.errors %} has-error {% endif %}">
+        {{ form.processor_Id.label(class="col-sm-4") }}
+        {{ form.processor_Id(placeholder="", class="form-control") }}
+        {{ form.processor_Id.errors[0] }}
+    </div>
+    <div class="form-group {% if form.fingerprint_Id.errors %} has-error {% endif %}">
+        {{ form.fingerprint_Id.label(class="col-sm-4") }}
+        {{ form.fingerprint_Id(placeholder="", class="form-control") }}
+        {{ form.fingerprint_Id.errors[0] }}
+    </div>
+    <div class="form-group {% if form.camera_Id.errors %} has-error {% endif %}">
+        {{ form.camera_Id.label(class="col-sm-4") }}
+        {{ form.camera_Id(placeholder="", class="form-control") }}
+        {{ form.camera_Id.errors[0] }}
+    </div>
+    <div class="form-group {% if form.screen_Id.errors %} has-error {% endif %}">
+        {{ form.screen_Id.label(class="col-sm-4") }}
+        {{ form.screen_Id(placeholder="", class="form-control") }}
+        {{ form.screen_Id.errors[0] }}
+    </div>
+    <div class="form-group {% if form.price.errors %} has-error {% endif %}">
+        {{ form.price.label(class="col-sm-4") }}
+        {{ form.price(placeholder="", class="form-control") }}
+        {{ form.price.errors[0] }}
+    </div>
+    <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </div>
+</form>
+{% endblock %}

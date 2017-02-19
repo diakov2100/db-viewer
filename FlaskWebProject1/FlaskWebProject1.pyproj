@@ -1,0 +1,199 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>b972d01b-b674-4677-837d-3ee5179732d1</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>runserver.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <OutputPath>.</OutputPath>
+    <StaticUriPattern>^/static/.*</StaticUriPattern>
+    <StaticUriRewrite>^/$(MSBuildProjectName)/static/.*</StaticUriRewrite>
+    <PythonWsgiHandler>$(MSBuildProjectName).app</PythonWsgiHandler>
+    <Name>FlaskWebProject1</Name>
+    <RootNamespace>FlaskWebProject1</RootNamespace>
+    <WebBrowserPort>5555</WebBrowserPort>
+    <InterpreterId>{9a7a9026-48c1-4688-9d5d-e5699d47d074}</InterpreterId>
+    <InterpreterVersion>2.7</InterpreterVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="FlaskWebProject1\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="example.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\delete\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\delete\__init__.py" />
+    <Compile Include="FlaskWebProject1\forms.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\login\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\login\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\models.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tfingerprint.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tmodel.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tprocessor.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tscreen.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tusb.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tcamera.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tcompany.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tlocation.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tmanufacture.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\sqltables\tos.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\db_conn.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\statistics.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\update\views.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="FlaskWebProject1\update\__init__.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="runserver.py" />
+    <Compile Include="FlaskWebProject1\__init__.py" />
+    <Compile Include="FlaskWebProject1\views.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="FlaskWebProject1\" />
+    <Folder Include="FlaskWebProject1\login\" />
+    <Folder Include="FlaskWebProject1\delete\" />
+    <Folder Include="FlaskWebProject1\update\" />
+    <Folder Include="FlaskWebProject1\sqltables\" />
+    <Folder Include="FlaskWebProject1\static\" />
+    <Folder Include="FlaskWebProject1\static\css\" />
+    <Folder Include="FlaskWebProject1\static\img\" />
+    <Folder Include="FlaskWebProject1\static\js\" />
+    <Folder Include="FlaskWebProject1\templates\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="FlaskWebProject1\static\css\bootstrap-responsive.min.css" />
+    <Content Include="FlaskWebProject1\static\css\bootstrap.min.css" />
+    <Content Include="FlaskWebProject1\static\css\signup.css" />
+    <Content Include="FlaskWebProject1\static\css\login.css" />
+    <Content Include="FlaskWebProject1\static\css\table.css" />
+    <Content Include="FlaskWebProject1\static\img\aol.png" />
+    <Content Include="FlaskWebProject1\static\img\flickr.png" />
+    <Content Include="FlaskWebProject1\static\img\glyphicons-halflings-white.png" />
+    <Content Include="FlaskWebProject1\static\img\glyphicons-halflings.png" />
+    <Content Include="FlaskWebProject1\static\img\google.png" />
+    <Content Include="FlaskWebProject1\static\img\myopenid.png" />
+    <Content Include="FlaskWebProject1\static\img\trash.png" />
+    <Content Include="FlaskWebProject1\static\img\yahoo.png" />
+    <Content Include="FlaskWebProject1\static\js\bootstrap.min.js" />
+    <Content Include="FlaskWebProject1\static\js\jquery-1.11.2.js" />
+    <Content Include="FlaskWebProject1\static\js\jquery-1.11.2.min.map" />
+    <Content Include="FlaskWebProject1\templates\404.html" />
+    <Content Include="FlaskWebProject1\templates\500.html" />
+    <Content Include="FlaskWebProject1\templates\add_company_form.html" />
+    <Content Include="FlaskWebProject1\templates\add_manufacture_form.html" />
+    <Content Include="FlaskWebProject1\templates\add_model_form.html" />
+    <Content Include="FlaskWebProject1\templates\add_os_form.html" />
+    <Content Include="FlaskWebProject1\templates\component.html" />
+    <Content Include="FlaskWebProject1\templates\field_errors.html" />
+    <Content Include="FlaskWebProject1\templates\flash.html" />
+    <Content Include="FlaskWebProject1\templates\index.html" />
+    <Content Include="FlaskWebProject1\templates\layout.html" />
+    <Content Include="FlaskWebProject1\templates\signup.html" />
+    <Content Include="FlaskWebProject1\templates\stat.html" />
+    <Content Include="FlaskWebProject1\templates\table.html" />
+    <Content Include="FlaskWebProject1\templates\add_location_form.html" />
+    <Content Include="FlaskWebProject1\templates\login.html" />
+    <Content Include="FlaskWebProject1\templates\update.html" />
+    <Content Include="requirements.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="{9a7a9026-48c1-4688-9d5d-e5699d47d074}\2.7" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

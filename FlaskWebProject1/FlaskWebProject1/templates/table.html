@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>{{ title }}</h2>
+<style type='text/css'>
+    table {
+        width: auto;
+        table-layout: auto;
+        border-collapse: collapse;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    td {
+        height: 10px;
+        vertical-align: middle;
+        text-align: left;
+    }
+
+    th, td {
+        padding: 3px;
+        border-bottom: 1px solid #ddd;
+    }
+
+    tr:hover {
+        background-color: #c4c4c4;
+    }
+
+    button {
+        background-color: #9d9d9d;
+        border: none;
+        color: white;
+        padding: 3px 3px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+</style>
+{{ table }}
+<div class="col-sm-7">
+    {% if fl %}
+    {% include add_form %}
+    {% endif %}
+</div>
+<div class="col-sm-5"></div>
+{% endblock %}

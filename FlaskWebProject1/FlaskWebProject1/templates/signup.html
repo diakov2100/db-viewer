@@ -1,0 +1,30 @@
+{%extends "layout.html"%}
+{% block content %}
+<title>Python Flask Bucket List App</title>
+<div class="jumbotron">
+    <h1>Sign UP</h1>
+    <form action="" method="post" name="add">
+        {{form.hidden_tag()}}
+        <div class="form-group {% if form.username.errors %} has-error {% endif %}">
+            {{form.username.label(class="col-sm-4")}}
+            {{ form.username(placeholder="", class="form-control") }}
+            {{ form.username.errors[0] }}
+        </div>
+        <div class="form-group {% if form.email.errors %} has-error {% endif %}">
+            {{form.email.label(class="col-sm-4")}}
+            {{ form.email(placeholder="E.g. brucewayne@wayne.com", class="form-control") }}
+            {{ form.email.errors[0] }}
+        </div>
+        <div class="form-group {% if form.password.errors %} has-error {% endif %}">
+            {{form.password.label(class="col-sm-4")}}
+            {{ form.password(placeholder="", class="form-control") }}
+            {{ form.password.errors[0] }}
+        </div>
+        <div class="form-group row">
+            <div class="offset-sm-2 col-sm-10">
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+    </form>
+</div>
+{% endblock %}

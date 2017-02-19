@@ -1,0 +1,30 @@
+﻿{% block content %}
+<form action="" method="post" name="add">
+    {{form.hidden_tag()}}
+    <div class="form-group {% if form.name.errors %} has-error {% endif %}">
+        {{ form.name.label(class="col-sm-4") }}
+        {{ form.name(placeholder="", class="form-control") }}
+        {{ form.name.errors[0] }}
+    </div>
+    <div class="form-group {% if form.version.errors %} has-error {% endif %}">
+        {{ form.version.label(class="col-sm-4") }}
+        {{ form.version(placeholder="", class="form-control") }}
+        {{ form.version.errors[0] }}
+    </div>
+    <div class="form-group {% if form.year.errors %} has-error {% endif %}">
+        {{ form.year.label(class="col-sm-4") }}
+        {{ form.year(placeholder="", class="form-control") }}
+        {{ form.year.errors[0] }}
+    </div>
+    <div class="form-group {% if form.company.errors %} has-error {% endif %}">
+        {{ form.company.label(class="col-sm-4") }}
+        {{ form.company(placeholder="", class="form-control") }}
+        {{ form.company.errors[0] }}
+    </div>
+    <div class="form-group row">
+        <div class="offset-sm-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Add</button>
+        </div>
+    </div>
+</form>>
+{% endblock %}

@@ -1,0 +1,37 @@
+﻿{% include "bootstrap/wtf.html" %}
+
+{%extends "layout.html"%}
+{% block content %}
+{% if session.logged_in %}
+<p>You're logged in already!</p>
+{% else %}
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-5 col-md-3">
+            <form action="" method="post" name="add">
+                {{form.hidden_tag()}}
+                <h4>Welcome back.</h4>
+                <div class="form-group {% if form.username.errors %} has-error {% endif %}">
+                    {{form.username.label(class="col-sm-4")}}
+                    {{ form.username(placeholder="", class="form-control") }}
+                    {{ form.username.errors[0] }}
+                </div>
+                <div class="form-group {% if form.password.errors %} has-error {% endif %}">
+                    {{form.password.label(class="col-sm-4")}}
+                    {{ form.password(placeholder="", class="form-control") }}
+                    {{ form.password.errors[0] }}
+                </div>
+                <div class="form-group row">
+                    <div class="offset-sm-2 col-sm-10">
+                        <button type="submit" class="btn btn-primary">Log In</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</div>
+{% endif %}
+{% endblock %}
+
+

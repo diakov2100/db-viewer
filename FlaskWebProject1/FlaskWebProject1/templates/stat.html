@@ -1,0 +1,29 @@
+﻿{% extends "layout.html" %}
+{%block content%}
+
+<div class="row">
+    <div class="col-md-6">
+        <div class="container" align="left">
+            <embed type="image/svg+xml" src={{graph_data3|safe}} style="max-width:48%" />
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="container" align="left">
+            <embed type="image/svg+xml" src={{graph_data4|safe}} style="max-width:48%" />
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-ms-6">
+        <div class="container" align="center">
+            <embed type="image/svg+xml" src={{graph_data1|safe}} style="max-width:80%"/>
+        </div>
+    </div>
+    <div class="col-ms-6">
+        <div class="container" align="center">
+            <embed type="image/svg+xml" src={{graph_data2|safe}} style="max-width:80%" />
+        </div>
+    </div>
+</div>
+
+    {% endblock %}

@@ -1,0 +1,12 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<h2>Update: {{ title }} ID: {{ id }}</h2>
+{{ table }}
+<div class="col-sm-7">
+    {% if fl %}
+    {% include add_form %}
+    {% endif %}
+</div>
+<div class="col-sm-5"></div>
+{% endblock %}

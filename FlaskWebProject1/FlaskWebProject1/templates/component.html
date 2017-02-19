@@ -1,0 +1,14 @@
+﻿{% extends "layout.html" %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <h2><a href="{{ url_for('component.camera') }}">Camera</a></h2>
+        <h2><a href="{{ url_for('component.fingerprint') }}">Fingerprint</a></h2>
+        <h2><a href="{{ url_for('component.processor') }}">Processor</a></h2>
+        <h2><a href="{{ url_for('component.usb') }}">USB Connector</a></h2>
+        <h2><a href="{{ url_for('component.screen') }}">Screen</a></h2>
+    </div>
+</div>
+{% endblock %}
